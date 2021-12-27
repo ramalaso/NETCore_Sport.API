@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "/dHigLdMgDnxEgkwky+DaoZgsv9Z+5Vnbqk2onkAU2CobI/D0Zg+EQ0h70Ek7P6Cyr9uVORKugz+dOnF/Rlo5A==",
+  "dgSpecHash": "kUihbiLKNL4RsRCTIYDkVEyzKs+RQbpBWENp+AQAhr1+N9m6nNQP3nAyjE5LeCpWyy/BjQ3VX3eEysrfYKmqaw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Raul.Laredo\\OneDrive - Nice Systems Ltd\\Documents\\courses\\CSharpApps\\HPlusSport.API\\HPlusSport.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Raul.Laredo\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
+    "C:\\Users\\Raul.Laredo\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning.apiexplorer\\5.0.0\\microsoft.aspnetcore.mvc.versioning.apiexplorer.5.0.0.nupkg.sha512",
     "C:\\Users\\Raul.Laredo\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.13\\microsoft.entityframeworkcore.5.0.13.nupkg.sha512",
     "C:\\Users\\Raul.Laredo\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.13\\microsoft.entityframeworkcore.abstractions.5.0.13.nupkg.sha512",
     "C:\\Users\\Raul.Laredo\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.13\\microsoft.entityframeworkcore.analyzers.5.0.13.nupkg.sha512",

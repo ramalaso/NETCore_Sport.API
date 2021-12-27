@@ -1,6 +1,8 @@
 using HPlusSport.API.models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,10 +24,21 @@ namespace HPlusSport.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ShopContext>(options => options.UseInMemoryDatabase("Shop"));
-            services.AddControllers();
+            services.AddControllers()
+                .ConfigureApiBehaviorOptions(options => {
+                    // options.SuppressModelStateInvalidFilter = true;
+                })
+            ;
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "HPlusSport.API", Version = "v1" });
+            });
+
+            services.AddApiVersioning(options => {
+                options.ReportApiVersions = true;
+                options.DefaultApiVersion = new ApiVersion(1,0);
+                options.AssumeDefaultVersionWhenUnspecified = true;
+                options.ApiVersionReader = new HeaderApiVersionReader("X-API-Version");
             });
         }
 
